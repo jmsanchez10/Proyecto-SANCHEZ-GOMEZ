@@ -91,18 +91,3 @@ class ServidorCorreo:
 
         
 
-# Ejemplo de uso
-if __name__ == "__main__":
-    servidor = ServidorCorreo()
-
-    usuario1 = Usuario("Alice", "alice@example.com")
-    usuario2 = Usuario("Bob", "bob@example.com")
-
-    servidor.agregar_usuario(usuario1)
-    servidor.agregar_usuario(usuario2)
-
-    usuario1.enviar_mensaje(servidor, "bob@example.com", "Hola", "Hola Bob, ¿cómo estás?")
-    mensajes_bob = usuario2.listar_mensajes()
-
-    for msg in mensajes_bob:
-        print(msg)
