@@ -1,3 +1,6 @@
+
+
+
 class Mensaje:
     def __init__(self, remitente, destinatario, asunto, contenido):
         self._remitente = remitente
@@ -84,6 +87,9 @@ class ServidorCorreo:
         else:
             print(f"Error: Usuario destinatario {mensaje.destinatario} no encontrado.")
 
+
+
+        
 
 # Ejemplo de uso
 if __name__ == "__main__":
